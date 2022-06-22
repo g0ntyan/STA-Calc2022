@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>電卓課題</title>
+    <lenk rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <script src="calc.js"></script>
+    <form name="calc">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input readonly type="text" class="display" name="display" value="">
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" onclick="Calc(this)"></td>
+                <td><input type="button" value="8" onclick="Calc(this)"></td>
+                <td><input type="button" value="9" onclick="Calc(this)"></td>
+                <td><input type="button" value="÷" class="oparation" name="div_btn" onclick="Calc(this)"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="4" onclick="Calc(this)"></td>
+                <td><input type="button" value="5" onclick="Calc(this)"></td>
+                <td><input type="button" value="6" onclick="Calc(this)"></td>
+                <td><input type="button" value="x" class="oparation" name="add_btn" onclick="Calc(this)"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="1" onclick="Calc(this)"></td>
+                <td><input type="button" value="2" onclick="Calc(this)"></td>
+                <td><input type="button" value="3" onclick="Calc(this)"></td>
+                <td><input type="button" value="-" class="oparation" onclick="Calc(this)"></td>
+            </tr>
+            
+            <tr>
+                <td><input type="button" value="0" onclick="Calc(this)"></td>
+                <td><input type="button" value="C" onclick="Calc(this)"></td>
+                <td><input type="button" value="=" class="equal" onclick="Calc(this)"></td>
+                <td><input type="button" value="+" class="oparation" onclick="Calc(this)"></td>
+            </tr>
+        </table>
+    </form>        
+</body>
+</html>
