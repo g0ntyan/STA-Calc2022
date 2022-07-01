@@ -3,12 +3,12 @@ let Result ="";
 let currentResult = "";
 let flag = 0;
 
-const screen = document.getElementById("display");
+const display = document.getElementById("display");
 
 const inputValue = data =>{
     flag = 0;
     currentResult += data;
-    display.textContent = currentResult;
+    display.textContent = Result;
 };
 
 const Calc = data =>{
@@ -17,11 +17,11 @@ const Calc = data =>{
     Result = eval(Resalt + mark + currentResult);    
     mark = data;
     currentResult = "";
-    display.textContent = result;
+    display.textContent = Result;
     }else if (flag === 1 &&  flag === 1){  
-    currentResult = eval(currentResult/100);
+    Result = eval(currentResult/100);
     currentResult = "";
-    display.textContent = currentResult;
+    display.textContent = Result;
     } else if (data === "=") {
     flag = 1;
     Result = eval(total + mark + currentResult);
