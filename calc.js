@@ -1,13 +1,19 @@
 let Dot = 0;
+let Clr = 0;
 function Calc(btn) {
   let Btn = btn.value;  
   let Result = document.calc.display.value;
     if(Btn == "=") {
       document.calc.display.value = eval(Result);
       Dot = 0;
-    } else if (Btn == "AC") {
+    } else if (Btn == "AC" && Clr == 0) {
+      document.calc.display.value = Result.slice(0,-1);
+      Clr = 1;
+
+    }else if (Btn == "AC") {
       document.calc.display.value = "";
       Dot = 0;
+      Clr = 0;
     } else {
       if (Btn == "x") {
         Btn = "*";
@@ -17,7 +23,7 @@ function Calc(btn) {
         Dot = 0;
       }else if (Btn == "."){
         if(Dot == 1){
-        Btn = ""; 
+          Btn = ""; 
         } else{
           Dot = 1; 
         }
