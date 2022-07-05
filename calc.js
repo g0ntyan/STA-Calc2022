@@ -27,8 +27,8 @@ function Calc(btn) {
         } else{
           Dot = 1; 
         }
+       Clr = 0;
       }
-      Clr = 0;
       document.calc.display.value += Btn;
       document.calc.add_btn.value = "x";
       document.calc.div_btn.value = "÷";
